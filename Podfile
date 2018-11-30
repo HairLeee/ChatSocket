@@ -1,19 +1,28 @@
-# Uncomment the next line to define a global platform for your project
+# Uncomment this line to define a global platform for your project
 # platform :ios, '9.0'
 
-target 'ChatCustomer' do
-  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+target 'RSAMobile' do
+  # Comment this line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
-
-  # Pods for ChatCustomer
+  pod 'Google/SignIn'
+  pod 'SideMenu'
+  pod 'GoogleMaps'
+  pod 'GooglePlaces'
+  pod 'GooglePlacePicker'
+  pod 'DropDown', '~> 2'
+  pod 'NVActivityIndicatorView'
+  pod 'Firebase/Core'
+  pod 'Firebase/Messaging'
+  pod 'Alamofire', '~> 4.4'
   pod 'Socket.IO-Client-Swift', '~> 11.1.3'
-#  pod 'ReverseExtension'
-  target 'ChatCustomerTests' do
+  #pod 'FontAwesome.swift'
+
+  target 'RSAMobileTests' do
     inherit! :search_paths
     # Pods for testing
   end
 
-  target 'ChatCustomerUITests' do
+  target 'RSAMobileUITests' do
     inherit! :search_paths
     # Pods for testing
   end
